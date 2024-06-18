@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "OneWeekJam.sln"
+    "dotnet.defaultSolution": "OneWeek.sln"
 }
