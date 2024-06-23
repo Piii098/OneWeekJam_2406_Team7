@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -18,11 +19,12 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        speed = m_player.speed * 10;
+        var spd = m_player.speed * 10 + speed;//プレイヤーが加速したとき用
+
         int xVector = -1;
         if (!GManager.instance.isGameOver)
         {
-            rb.velocity = new Vector2(speed * xVector, 0.0f);
+            rb.velocity = new Vector2(spd * xVector, 0.0f);
         }
         else
         {

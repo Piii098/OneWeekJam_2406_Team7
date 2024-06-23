@@ -11,7 +11,7 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] private float spawnIntervalMax;//次の敵が出現する最大時間
     private float spawnInterval=0;
     private float nowTime;
-    private float[] ySpawn =  { -1.6f, -2.7f, -4f};
+    private float[] ySpawn =  { -1.6f, -2.7f, -4f};//上段、中段、下段
 
     // Start is called before the first frame update
     void Start()
